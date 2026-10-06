@@ -3,6 +3,7 @@ import Bevezeto from "./components/bevezeto";
 import Listak from "./components/listak";
 import Tablazat from "./components/tablazat";
 import Allatok from "./components/allatok";
+import Tudnivalok from "./components/tudnivalok";
 
 function App() {
   return (
@@ -47,6 +48,7 @@ function App() {
         />
         <Tablazat />
         <Allatok />
+        <Tudnivalok />
       </div>
       <Lablec />
     </>
