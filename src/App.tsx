@@ -1,6 +1,8 @@
 import { Focim, Lablec } from "./components/focim-lablec";
 import Bevezeto from "./components/bevezeto";
 import Listak from "./components/listak";
+import Tablazat from "./components/tablazat";
+import Allatok from "./components/allatok";
 
 function App() {
   return (
@@ -43,7 +45,8 @@ function App() {
           "Rovarokkal táplálkozó"
         ]}
         />
-
+        <Tablazat />
+        <Allatok />
       </div>
       <Lablec />
     </>
