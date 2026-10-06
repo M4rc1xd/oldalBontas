@@ -1,13 +1,53 @@
-import '../css/egyedi.css'
-import '../css/bootstrap.min.css'
+import { Focim, Lablec } from "./components/focim-lablec";
+import Bevezeto from "./components/bevezeto";
+import Listak from "./components/listak";
 
 function App() {
-
   return (
     <>
-      
+      <div className="container">
+        <Focim />
+        <Bevezeto
+          szoveg={[
+            `Az állatkertekben különböző földrészekről származó állatokkal
+                találkozhatunk. Az állatokat fajuknak és természetes élőhelyüknek
+                megfelelő körülmények között gondozzák.`,
+            `Az állatok életkora és testsúlya fajonként jelentősen eltérhet.
+                Táplálkozásuk is különböző: vannak növényevők, húsevők és
+                mindenevők.`,
+            `Egyes állatfajok veszélyeztetettek, ezért az állatkertek a
+                természetvédelmi szemléletformálásban és egyes fajok megőrzésében
+                is szerepet vállalhatnak.`,
+          ]}
+        />
+        <Listak 
+        elohelyek={[
+          "Afrikai szavanna",
+          "Ázsiai esőerdő",
+          "Dél-amerikai őserdő",
+          "Sarki vidék",
+          "Ausztráliai területek"
+        ]}
+        nepszeruAllatok={[
+          "Oroszlán",
+          "Elefánt",
+          "Zsiráf",
+          "Panda",
+          "Pingvin"
+        ]}
+        taplalkozas={[
+          "Növényevő",
+          "Húsevő",
+          "Mindenevő",
+          "Gyümölcsevő",
+          "Rovarokkal táplálkozó"
+        ]}
+        />
+
+      </div>
+      <Lablec />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
